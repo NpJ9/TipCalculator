@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  color:white
+}
+
+.main{
+    background-color: #C5E4E7;
+    width: 1440px;
+    height:1024px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2, h3{
+    color:black
+}
+
+h3{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    margin-top:10rem;
+    margin-bottom:5rem;
+}
+
+.container{
+    background-color: aliceblue;
+    width: 920px;
+    height: 481px;
+    border-radius: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__container{
+    display: flex;
+}
+
+.right__container{
+    display: flex; 
+}
+
+.left__container{
+    width: 413px;
+    height:417px;
+    border-radius: 25px; 
+}
+
+.right__container{
+    background-color: #00474B;
+    width: 413px;
+    height:417px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.inputSpacing{
+    background-image: url("icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position:5% 50%;    
+}
+
+.NumberofPeopleLogo{
+    background-image: url("icon-person.svg");
+    background-repeat: no-repeat;
+    background-position:5% 50%;    
+}
+
+input{
+    width: 379px;
+    height: 48px;
+    background-color: #F3F9FA;
+    border: 1px solid #00474B;
+    /* padding-top: 5px; */
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    text-align: right;
+    color:black;
+}
+
+.custom{
+    padding:0;
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.inputSpacing{
+    border: 1px solid #00474B;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    margin-left:1rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    text-align: right;
+    color:black;
+    background-image: url('C:\Users\JackN\OneDrive\Desktop\Coding2025\WeatherApp\icon-dollar.svg');
+}
+
+.tipGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tip__button{
+    margin:5px;
+    background-color: #00474B;
+    width: 117px;
+    border-radius: 5px;
+    color:white;
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tip__custom {
+    margin:5px;
+    background-color: #00474B;
+    width: 117px;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+    text-align: center;
+    content: '%';
+    border:0; 
+    outline:none;
+}
+
+.tip__custom::placeholder{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    content: '%';
+}
+
+.customtipButton{
+    border: transparent;
+    border:0; 
+    outline:none;
+}
+
+ .tip__custom::after {
+    content: '%';
+    color:white;
+ 
+  }
+
+.tip__button:hover{
+    background-color: #26C2AE;
+    color:black;
+    transition:ease-in-out ;
+    border: none;
+    cursor: pointer;
+}
+
+.tip__button:active{
+    background-color: #9EBBBD;
+    border:5px #26C2AE; 
+}
+
+.selectTipWrapper{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.NumofPeople{
+    margin-bottom:0.75rem;
+}
+
+.right__container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr;
+}
+
+.tip__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:2rem;
+  margin-right:3rem;
+} 
+
+.reset{
+  width: 333px;
+  height: 48px;
+  margin:3rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #26C2AE;
+}
+
+.reset:hover{
+    background-color: #C5E4E7;
+    cursor: pointer;
+}
+
+.amount_header{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amount_people{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: #7F9D9F;
+}
+
+.dollarAmount{
+    color:#26C2AE;
+    font-size: 48px;
+}
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  

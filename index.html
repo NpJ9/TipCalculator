@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href ="styles.css">
+</head>
+<body>
+    <section class = "main">
+
+        <h1 class = "header"><img class ="logo" src ="logo.svg"></h1>
+            <div class = "container">
+         
+                    <div class = "left__container">
+                        <div class = "bill__wrapper">
+                            <h2>Bill</h2>
+                                <div class = "inputBill">
+                                   <input id ="totalBill" type="number" class = "inputSpacing" placeholder ="0" >
+                                </div>
+                               
+                            <div class ="selectTipWrapper">
+                                <h3 class ="selectTip">Select Tip %</h3>
+                                <div class ="tipGrid">
+                                    <button class ="tip__button">5%</button>
+                                    <button class ="tip__button">10%</button>
+                                    <button class ="tip__button">15%</button>
+                                    <button class ="tip__button">25%</button>
+                                    <button class ="tip__button">50%</button>
+                                    <button class ="customtipButton"><input id = "custom_tip" class ="tip__custom" placeholder ="Custom"></button>
+                                </div>
+                            </div>
+                                <h3 class="NumofPeople">Number of People</h3>
+                                <div class = "inputBill">
+                                   <input type="number" id ="totalPeople"  class = "NumberofPeopleLogo" placeholder ="0">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class = "right__container">
+                        <div class ="tip__wrapper">
+                            <div class = "amount_header">Tip Amount
+                                <div class ="amount_people" id = "NumofPeople"></div>  <!-- need to set custom people-->
+                            </div>
+                                <div class ="dollarAmount" id="tipAmount" placeholder="$4.27">$0</div>
+                        </div>
+                        <div class ="tip__wrapper bottom">
+                            <div class = "amount_header">Total
+                                <div class ="amount_people" id = "NumofPeople2"></div> <!-- need to set custom people-->
+                                
+                            </div>
+                                <div class ="dollarAmount" id="totalAmount" placeholder="$32.79">$0</div>
+                        </div>
+
+                        <button class ="reset">RESET</button>
+                    </div>
+            </div>
+    </section>
+    <script src ="script.js"></script>
+</body>
+</html>
