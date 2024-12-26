@@ -99,11 +99,23 @@ input{
     color:black;
 }
 
+input::after{
+    color:red
+}
+
+.blue{
+    background-color: blue;
+}
+
 .custom{
     padding:0;
     font-family: "Space Mono", monospace;
     font-size: 20px;
     font-weight: 400;
+}
+
+.error{
+    border: 1px solid #ff0000;;
 }
 
 .inputSpacing{
